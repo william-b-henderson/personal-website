@@ -1,5 +1,5 @@
 {
-  "extends": "@web-at-berkeley/eslint-config",
+  "extends": ["@web-at-berkeley/eslint-config", "prettier"],
   "rules": {
     // suppress errors for missing 'import React' in files
    "react/react-in-jsx-scope": "off",

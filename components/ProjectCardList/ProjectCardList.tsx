@@ -1,9 +1,9 @@
 import { Flex } from '@chakra-ui/react';
 import { FC } from 'react';
 
-export const NavMenu: FC = ({ children }) => {
+export const ProjectCardList: FC = ({ children }) => {
   return (
-    <Flex justifyContent="flex-end" width="100vw" alignItems="center">
+    <Flex width="100%" flexWrap="wrap" justify="center">
       {children}
     </Flex>
   );

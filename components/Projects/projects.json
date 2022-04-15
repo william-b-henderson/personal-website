@@ -1,0 +1,80 @@
+{
+    "projectList": [
+    {
+        "title": "End-to-End Encrypted File Sharing System",
+        "language": "Go",
+        "description": "A secure system for sharing files between users that provides confidentiality integrity, and authenticity. Encrypted data through RSA-OAEP and AES-CTR mode, and verified the integrity of data with HMAC-SHA512 and RSA digital signatures. I drafted a design document before implementing, and wrote an extensive test case to evaluate robustness.",
+        "oneLiner": "A secure system for sharing files between users that provides confidentiality and integrity.",
+        "year": "2022",
+        "link": "/projects/encrypted-file-system",
+        "githubLink": "",
+        "imageAddress": "/encrypted-file-system-image.png",
+        "tags": [
+            "Go",
+            "Golang",
+            "Cryptography"
+        ]
+    },
+    {
+        "title": "NumC",
+        "language": "C",
+        "description": "Built components of the Python NumPy library in C, optimized for performance  through Intel SIMD intrinsics and thread-level parallelism. Achieved over 50x speed-up in matrix multiplication and 500x speed-up in calculating powers of amatrix over a sequential implementation.",
+        "oneLiner": "Improved the speed of matrix operations through Intel SIMD intrinsics and thread-level parallelism.",
+        "year": "2021",
+        "link": "/projects/numc",
+        "githubLink": "",
+        "imageAddress": "/numc-project-image.png",
+        "tags": [
+            "C",
+            "Optimizaiton",
+            "Parallelism"
+        ]
+    },
+    {
+        "title": "Perfect Plate",
+        "language": "React",
+        "description": "Collaborated with a team of four to develop a web application that recommends restaurants based on the occasion (e.g. dates, work meetings, quick bites or dinner with friends). Worked as the sole frontend developer to design the theme, layout, and features of the application to ensure responsiveness and maximize user experience. I redesigned the backend to connect with the Yelp API to retrieve restaurant information and to store the user's preferences in a database.",
+        "oneLiner": "A restaurant recommendation web application that recommends restaurants based on the occasion.",
+        "year": "2021",
+        "link": "/projects/perfect-plate",
+        "githubLink": "",
+        "imageAddress": "/perfect-plate-project-image.png",
+        "tags": [
+            "Reactjs",
+            "Javascript",
+            "Nodejs",
+            "Fullstack Development"
+        ]
+    },
+    {
+        "title": "Digit Classification and Language Identification with Neural Networks",
+        "language": "Python",
+        "description": "Implemented a two-layer neural network to classify handwritten digits from the MNIST dataset, performing at a 98% accuracy. Created a recurrent neural network (RNN) to classify words from five different languages, realizing an accuracy of 85%.",
+        "oneLiner": "Implemented a two-layer neural network to classify handwritten digits from the MNIST dataset.",
+        "year": "2021",
+        "link": "/projects/digit-classification",
+        "githubLink": "",
+        "imageAddress": "/digit-classification-project-image.jpeg",
+        "tags": [
+            "Python",
+            "Neural Networks",
+            "Recurrent Neural Networks",
+            "Machine Learning"
+        ]
+    },
+    {
+        "title": "Procedurally Generated Dungeon Simulation",
+        "language": "Java",
+        "description": "A video game where the player can explore procedurally generated top-down worlds. In the world, the player can only see the tiles around him, and must navigate the dungeon to find the unlocked door. This project made use of serialization, 2D array manipulation, and persistence. It also implemented saving and loading, mouse tracking, and a custom vision algorithm to only show viewable tiles.",
+        "oneLiner": "A procedurally generated dungeon simulation.",
+        "year": "2020",
+        "link": "/projects/dungeon-simulation",
+        "githubLink": "",
+        "imageAddress": "/dungeon-simulation-project-image.png",
+        "tags": [
+            "Java",
+            "Game Development"
+        ]
+    }
+]
+}

@@ -1,22 +1,34 @@
-import { Flex, Text } from '@chakra-ui/react'
-import type { NextPage } from 'next'
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-// import { Box, Text } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react';
+import type { NextPage } from 'next';
 
-import { PageLayout } from '../../components/PageLayout'
+import { PageLayout } from '../../components/PageLayout';
+import { ProjectCard } from '../../components/ProjectCard';
+import { ProjectCardList } from '../../components/ProjectCardList';
+
+import projects from '../../components/Projects/projects.json';
 
 const ProjectsPage: NextPage = () => {
-    return (
-        <Flex justify="center">
-            <PageLayout currentPage='projects'>
-                <Text textStyle="sub3">
-                    Projects
-                </Text>
-            </PageLayout>
-        </Flex>
-  )
-}
+  const projectsList = projects.projectList;
 
-export default ProjectsPage
+  return (
+    <Flex justify="center">
+      <PageLayout currentPage="projects">
+        <ProjectCardList>
+          {projectsList.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              language={project.language}
+              description={project.description}
+              year={project.year}
+              imageAddress={project.imageAddress}
+              link={project.link}
+            />
+          ))}
+        </ProjectCardList>
+      </PageLayout>
+    </Flex>
+  );
+};
+
+export default ProjectsPage;

@@ -1,43 +1,53 @@
-import { Button, Text } from '@chakra-ui/react'
-import Link from 'next/link'
+import { Button, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 
 type NavItemProps = {
-  label?: string,
-  link?: string,
-  active?: boolean
-}
+  label?: string;
+  link?: string;
+  textStyle: string;
+  active?: boolean;
+};
 
-export const NavItem = ({label, link, active}: NavItemProps) => {
-  const navItemDecoration = active ? 'underline' : 'none'
+export const NavItem = ({ label, link, active, textStyle }: NavItemProps) => {
+  if (active) {
+  }
+  // const navItemUnderline = active ? '100%' : '0%';
   return (
-    <Link href={`${link || ""}`} passHref>
-          <Button 
-            // border="1px solid black" 
-            mx="1em"
-            padding=".5em"
-            backgroundColor="transparent"
-            textDecoration={navItemDecoration}
-            _hover={{
-              color: "primary.lightBlue.300",
-              textDecoration: "underline",
-            }}
-            _active={{
-              textColor: "primary.lightBlue.300",
-              textDecoration: "underline",
-            }}
-            _focus={{
-              color: "primary.lightBlue.300",
-              textDecoration: "underline",
-              borderColor: "#719ECE",
-              boxShadow: "0 0 10px #719ECE"
-            }}
-          >
-            <Text textStyle={"h4"}>
-              {label}
-            </Text>
-          </Button>
+    <Link href={`${link || '/'}`} passHref>
+      <Button
+        mx="1rem"
+        py="1.5rem"
+        px=".5rem"
+        backgroundColor="transparent"
+        color="secondary.dorian"
+        _hover={{
+          color: 'black',
+          _before: {
+            width: '100%',
+          },
+        }}
+        _active={{
+          textColor: 'primary.lightGray.500',
+        }}
+        _focus={{
+          color: 'black',
+          _before: {
+            width: '100%',
+          },
+        }}
+        _before={{
+          transition: '300ms',
+          height: '5px',
+          content: '""',
+          position: 'absolute',
+          backgroundColor: 'black',
+          // height: "0%",
+          width: '0%',
+          bottom: '0px',
+        }}
+      >
+        <Text textStyle={textStyle}>{label}</Text>
+      </Button>
     </Link>
-    
-  )
-}
-
+  );
+};

@@ -1,1 +1,1 @@
-export { WelcomeSplash } from './WelcomeSplash'
+export { WelcomeSplash } from './WelcomeSplash';
