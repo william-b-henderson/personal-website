@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FC } from 'react';
 
 export const WelcomeSplash: FC = () => {
@@ -31,8 +32,11 @@ export const WelcomeSplash: FC = () => {
         <Text color="black" textStyle="sub2" textAlign={'center'}>
           Hello! I'm Will, a software engineer majoring in Computer Science at UC Berkeley. <br />
           <br />
-          Currently, I'm working on a project called Elevation Map, a web application that helps users plan the best run
-          with a minimal amount of elevation change. <br />
+          Currently, I'm working on a project called{' '}
+          <Link href="/projects/elevation-map" passHref>
+            <a style={{ textDecoration: 'underline', color: 'blue' }}>Elevation Map</a>
+          </Link>
+          , a web application that helps users plan the best run with a minimal amount of elevation change. <br />
           <br />
           Check out some of my other projects below!
         </Text>
