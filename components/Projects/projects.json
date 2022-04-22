@@ -4,7 +4,7 @@
         "title": "End-to-End Encrypted File Sharing System",
         "language": "Go",
         "description": "A secure system for sharing files between users that provides confidentiality integrity, and authenticity. Encrypted data through RSA-OAEP and AES-CTR mode, and verified the integrity of data with HMAC-SHA512 and RSA digital signatures. I drafted a design document before implementing, and wrote an extensive test case to evaluate robustness.",
-        "oneLiner": "A secure system for sharing files between users that provides confidentiality and integrity.",
+        "oneLiner": "A secure system for sharing files between users that provides confidentiality, authenticity, and integrity.",
         "year": "2022",
         "link": "/projects/encrypted-file-system",
         "githubLink": "",

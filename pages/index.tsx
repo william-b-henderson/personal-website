@@ -11,7 +11,7 @@ import { WelcomeSplash } from '../components/WelcomeSplash';
 
 const Home: NextPage = () => {
   return (
-    <Flex justify="center">
+    <Flex justify="center" w="100%">
       <PageLayout>
         <WelcomeSplash />
         <RecentProjectsSection />
