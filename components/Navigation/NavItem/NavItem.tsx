@@ -21,16 +21,17 @@ export const NavItem = ({ label, link, active, textStyle }: NavItemProps) => {
         backgroundColor="transparent"
         color="secondary.dorian"
         _hover={{
-          color: 'black',
           _before: {
             width: '100%',
           },
         }}
         _active={{
-          textColor: 'primary.lightGray.500',
+          textColor: 'primary.lightGray.200',
+          _before: {
+            backgroundColor: 'primary.lightGray.200',
+          },
         }}
         _focus={{
-          color: 'black',
           _before: {
             width: '100%',
           },
@@ -40,8 +41,7 @@ export const NavItem = ({ label, link, active, textStyle }: NavItemProps) => {
           height: '5px',
           content: '""',
           position: 'absolute',
-          backgroundColor: 'black',
-          // height: "0%",
+          backgroundColor: 'secondary.dorian',
           width: '0%',
           bottom: '0px',
         }}
