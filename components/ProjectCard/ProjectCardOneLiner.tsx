@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 // import { GreenButton } from '../Buttons';
@@ -19,7 +19,7 @@ export const ProjectCardOneLiner = ({ title, oneLiner, imageAddress, link, langu
       <Flex
         direction="column"
         justify="flex-start"
-        width="30%"
+        width={{ base: '95%', md: '30%' }}
         maxWidth="30rem"
         height="20rem"
         bg="secondary.dorian"
@@ -34,11 +34,11 @@ export const ProjectCardOneLiner = ({ title, oneLiner, imageAddress, link, langu
       >
         <ProjectCardTitleBar title={title} language={language} year={year} />
         <Image src={imageAddress} alt={title} layout="responsive" width="3000px" height="1500px" />
-        <Box w="100%" h="3.5em" overflow="scroll">
-          <Text textAlign="center" textStyle="sec3">
+        <Flex w="100%" px="1rem">
+          <Text textAlign="center" textStyle="sec3" mt="10px">
             {oneLiner}
           </Text>
-        </Box>
+        </Flex>
 
         {/* <GreenButton link={link} linkText="View Project" /> */}
       </Flex>
