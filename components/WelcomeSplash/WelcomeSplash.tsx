@@ -9,7 +9,7 @@ export const WelcomeSplash: FC = () => {
       justify="center"
       width="100%"
       mt="20px"
-      direction="row"
+      direction={{ base: 'column', md: 'row' }}
       marginLeft="10px"
       alignItems="center"
       bg="secondary.dorian"
@@ -28,8 +28,8 @@ export const WelcomeSplash: FC = () => {
       >
         <Image src="/Profile-HeadShot-Head.png" alt="Will Henderson" layout="fill" objectFit="cover" />
       </Box>
-      <Box width="60%" paddingLeft="5rem">
-        <Text color="black" textStyle="sub2" textAlign={'center'}>
+      <Box width={{ base: '100%', md: '60%' }} paddingLeft={{ base: '0px', md: '5rem' }}>
+        <Text color="black" textStyle="sub2" textAlign={'center'} paddingX={{ base: '1rem', md: '0rem' }}>
           Hello! I'm Will, a software engineer majoring in Computer Science at UC Berkeley. <br />
           <br />
           Currently, I'm working on a project called{' '}

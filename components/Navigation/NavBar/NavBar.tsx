@@ -3,6 +3,7 @@ import { Box, Flex } from '@chakra-ui/react';
 import { IconNavItem, NavItem } from '../NavItem';
 import { NavMenu } from '../NavMenu';
 import { BsGithub } from 'react-icons/bs';
+import { NavSideBar } from '../NavSideBar';
 
 type NavBarProps = {
   currentPage?: string;
@@ -20,6 +21,7 @@ export const NavBar = ({ currentPage }: NavBarProps) => {
         <NavItem link="contact" active={currentPage === 'contact'} label="Contact" textStyle="h4" />
         <IconNavItem label="Github" link="https://github.com/william-b-henderson" icon={<BsGithub size={36} />} />
       </NavMenu>
+      <NavSideBar />
     </Flex>
   );
 };

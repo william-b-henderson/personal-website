@@ -19,7 +19,7 @@ export const ProjectCard = ({ title, description, imageAddress, link, language, 
       <Flex
         direction="column"
         justify="flex-start"
-        width="45%"
+        width={{ base: '95%', md: '45%' }}
         maxWidth="30rem"
         height="30em"
         bg="secondary.dorian"
