@@ -12,12 +12,13 @@ export const PageLayout = ({ currentPage, children }: PageLayoutProps) => {
   return (
     <>
       <Head>
-        <title>William Henderson's Personal Website - {currentPage}</title>
+        <title>William Henderson | {currentPage}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="William Henderson's personal website and portfolio." />
       </Head>
       <Flex direction="column" justify="center" align="center" w="100%" bg="primary.lightGray.100">
         <NavBar currentPage={currentPage} />
+        <Flex w="100%" h="3rem"></Flex>
         {children}
       </Flex>
     </>
