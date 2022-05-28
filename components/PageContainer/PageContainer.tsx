@@ -1,7 +1,5 @@
 import { Flex } from '@chakra-ui/react';
-import Head from 'next/head';
 import { ReactNode } from 'react';
-import { NavBar } from '../Navigation/NavBar';
 
 type PageLayoutProps = {
   children?: ReactNode;
