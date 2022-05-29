@@ -123,23 +123,23 @@ export const theme = extendTheme({
       fontWeight: '500',
     },
     b1: {
-      fontSize: '16px',
+      fontSize: '18px',
       fontWeight: '400',
     },
     b2: {
-      fontSize: '14px',
+      fontSize: '16px',
       fontWeight: '400',
     },
     b3: {
-      fontSize: '12px',
+      fontSize: '14px',
       fontWeight: '400',
     },
     b4: {
-      fontSize: '10px',
+      fontSize: '12px',
       fontWeight: '400',
     },
     b5: {
-      fontSize: '14px',
+      fontSize: '10px',
       fontWeight: '400',
     },
     sec1: {
