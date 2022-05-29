@@ -17,7 +17,8 @@ export const NavBar = ({ currentPage }: NavBarProps) => {
 
   const handleScroll = debounce(() => {
     const scrollTop = window.pageYOffset;
-    if (scrollTop > lastScrollTop) {
+    const minScrollDist = 50;
+    if (scrollTop > lastScrollTop && scrollTop > minScrollDist) {
       // downscroll
       setVisible(false);
     } else {
